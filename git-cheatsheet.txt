@@ -1,0 +1,49 @@
+# Проверка версии Git
+git version
+
+# Настройка пользователя
+git config --global user.name "ваш_ник"
+git config --global user.email "ваша_почта@yandex.ru"
+
+# Инициализация репозитория
+git init -b main
+
+# Работа с удалённым репозиторием
+git remote add origin ссылка_на_репозиторий
+git remote -v
+git push -u origin main
+git push --set-upstream origin feature
+git pull
+git fetch --prune
+
+# Проверка состояния
+git status
+
+# Добавление файлов в индекс
+git add .
+git add Program/Program.cs
+
+# Создание коммитов
+git commit -m "Initial commit: create console app"
+git commit -m "Add user name input and greeting"
+
+# Просмотр истории
+git log
+git log --oneline
+git show хеш_коммита
+
+# Создание веток
+git checkout -b new-feature
+git branch hotfix
+git switch -c feature
+git switch main
+git switch -
+
+# Просмотр веток
+git branch
+git branch -a
+
+# Удаление веток
+git branch -d hotfix
+git branch -D feature
+git branch -D new-feature
